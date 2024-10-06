@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from "react"; // Importa a biblioteca React, necessária para construir componentes
+import FormularioEmail from "./formularioEmail"; // Importa o componente FormularioEmail, que contém o formulário com a lógica de validação
 
-function App() {
+// Componente principal da aplicação
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Renderiza o componente FormularioEmail dentro da aplicação */}
+      <FormularioEmail />
     </div>
   );
-}
+};
 
-export default App;
+export default App; // Exporta o componente App como padrão, permitindo que ele seja utilizado em outros arquivos
+
